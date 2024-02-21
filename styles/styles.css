@@ -1,0 +1,204 @@
+body {
+  background-color: #fef7ff;
+  overflow: hidden;
+}
+.sidediv {
+  position: fixed;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  border: none;
+  border-right: 3px solid #e4e4e7;
+  background-color: #fef7ff;
+}
+
+.nav {
+  position: fixed;
+  right: 0;
+  width: calc(
+    100% - 50px
+  ); 
+  height: 50px;
+  border: none;
+  border-bottom: 3px solid #e4e4e7;
+}
+.logo {
+  border: none;
+  border-bottom: 2px solid #e4e4e7;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: rgb(117, 2, 141);
+  font-family: sans-serif;
+}
+.search-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-container {
+  border: 2px solid gray;
+  border-radius: 20px;
+  width: 50%;
+  padding-left: 10px;
+  margin-left: 500px;
+}
+
+.search-container input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-container i {
+  margin-right: 5px; 
+}
+input:focus {
+  outline: none;
+}
+.navDiv {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 205px;
+  margin-top: 2px;
+  border-radius: 4px;
+  padding-left: 5px;
+}
+.navDiv:hover {
+  background-color: #eaacf2;
+}
+img {
+  width: 50px;
+  height: 25px;
+}
+.avatar {
+  margin-left: 20px;
+  color: black;
+}
+.mainDiv {
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+  padding-left: 00px;
+  overflow: hidden;
+}
+.dashboard {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 230px;
+}
+
+.card {
+  width: 250px;
+  background-color: #f0f4f8;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #4a5568;
+}
+
+.card p {
+  font-size: 1.1rem;
+  color: #718096;
+}
+
+.card:hover {
+  background-color: #e2e8f0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+.divform{
+  margin-left: 350px;
+}
+#home{
+  background-color: #eaacf2;
+}
+#lastDiv{
+  border: 2px solid red;
+  width: 50px;
+  height: 50px;
+}
+#account{
+  display: flex;
+  flex-direction: column;
+}
+/* Custom table styling */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Custom table header styling */
+.custom-header {
+  background-color: #6B46C1;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Custom table cell styling */
+.custom-cell {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Custom button styling */
+#submitBtn {
+  background-color: #6B46C1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#submitBtn:hover {
+  background-color: #4f33b1;
+}
+
+/* Custom form input styling */
+#form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#form input:focus {
+  outline: none;
+  border-color: #6B46C1;
+}
+
+/* Hide scrollbar */
+.divform {
+  overflow: hidden;
+}

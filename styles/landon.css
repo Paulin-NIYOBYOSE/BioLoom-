@@ -1,0 +1,71 @@
+.navigation{
+  display: flex;
+  flex-direction: row;
+  gap: 500px;
+}
+ul{
+  outline: none;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+
+}
+ul li {
+  margin-top: 12px;
+  color: white !important;
+}
+ul li a {
+  color: white;
+}
+#home{
+  color: #6B46C1;
+}
+#logo{
+  margin-top: 12px;
+}
+.button-custom {
+  margin-right: 20px;
+  margin-top: 5px;
+  background-color: #6B46C1 !important;
+  color: #fff !important;
+  width: 7rem;
+  height: 2.25rem;
+  border-radius: 1rem;
+  padding-bottom: 0.25rem;
+  transition-duration: 0.5s;
+  border-style: none;
+}
+
+.button-custom:hover {
+  background-color: #611fdc !important;
+  color: #ccc;
+}
+
+.landonDiv{
+  height: 84vh;
+  width: 100%;
+  display: flex ;
+  flex-direction: row;
+}
+.landondiv{
+  height: 100%;
+  width: 50%;
+  padding: 0px 0px 0px 50px;
+
+}
+h3{
+  font-size: 90px;
+  color: rgb(192 132 252);
+}
+p{
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: rgb(192 132 252);
+}
+#first-div{
+ 
+}
+#btn{
+  margin-left: 70px;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon " type="x-con" href="images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <script src="../jquery.js"></script>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #e5e7eb;
+            gap: 1.25rem;
+        }
+
+        .logo {
+            height: 5rem;
+        }
+
+        h3 {
+            font-weight: 600;
+            color: #6b46c1;
+        }
+
+        .login-container {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 20rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: normal;
+        }
+
+        f {
+            margin-top: 1.25rem;
+            margin-bottom: 2.5rem;
+            width: 16rem;
+        }
+
+        label {
+            margin-bottom: 0.5rem;
+        }
+
+        input[type='email'],
+        input[type='password'] {
+            margin-top: 0.25rem;
+            padding: 0.5rem;
+            width: 100%;
+            border: 2px solid #d1d5db;
+            border-radius: 0.375rem;
+            outline: none;
+        }
+
+        input[type='email']:focus,
+        input[type='password']:focus {
+            border-color: #8b5cf6;
+        }
+
+        button[type='submit'] {
+            width: 10rem;
+            height: 2.5rem;
+            background-color: #6b46c1;
+            color: #ffffff;
+            border-radius: 1rem;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            transition: background-color 0.4s;
+        }
+
+        button[type='submit']:hover {
+            background-color: #805ad5;
+        }
+
+        .register-link {
+            margin-top: 0.625rem;
+            font-size: 0.875rem;
+        }
+
+        .register-link a {
+            color: #3b82f6;
+            text-decoration: none;
+            transition: color 0.4s;
+        }
+
+        .register-link a:hover {
+            color: #4f46e5;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="images/logo.png" alt="" class="logo">
+    <h3>Please sign in to continue</h3>
+    <div class="login-container">
+        <div id="mydiv">
+            <div>
+                <label for="username">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div>
+              <a href="../Account/index.html"><button type="submit">Login</button></a>
+            </div>
+        </div>
+        <div class="register-link">
+            <span>Not a member yet? <a href="signup.html">Sign up</a></span>
+            <span><a href="#">Forgot password?</a></span>
+        </div>
+    </div>
+<!-- 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById("addForm").addEventListener("submit", (e) => {
+                e.preventDefault();
+                registerUser();
+            })
+        });
+
+        function registerUser() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            const request = new XMLHttpRequest();
+
+            const data = `email=${email}&password=${password}`;
+            request.open("POST", "api.php", true);
+            request.setRequestHeader("Content-Type", "application/ x-www-form-urlencoded")
+            request.send(data);
+
+            request.onload = function () {
+                if (request.status == 200) {
+                    console.log(request.responseText)
+                } else {
+                    console.log("error")
+                }
+            }
+        }
+    </script> -->
+</body>
+
+</html>

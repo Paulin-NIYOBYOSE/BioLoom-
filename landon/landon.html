@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon " type="x-con" href="../images/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioLoom</title>
+    <link rel="stylesheet" href="../styles/landon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Protest+Revolution&display=swap" rel="stylesheet">
+<script src="../jquery.js"></script>
+
+
+    <style>
+        body,.button-custom , .list{
+            font-family: "Protest Revolution";
+            background-color: rgb(31 41 55);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navigation">
+            <div id="logo">logo</div>
+            <div>
+                <ul>
+                    <li><a href="" id="home" class="list">Home</a></li>
+                    <li><a href="" class="list">About us</a></li>
+                    <li><a href="" class="list">FAQ</a></li>
+                    <li><a href="" class="list">Contact</a></li>
+                    <button class="button-custom" id="redirectButton">Log in</button>
+                </ul> 
+            </div>
+        </div>
+    </nav>
+    <div class="landonDiv">
+        <div class="landondiv">
+            <h3>Welcome to BioLoom</h3>
+            <p>Passionate about solving biotechnology issues, <br>
+            come explore the future of biotechnology with us</p>
+            <button id="btn" class="button-custom">Get started</button>
+        </div>
+        <div class="landondiv" id="first-div">
+            <img src="../images/back.png" style="height: 100%; width: 100%;" alt="">
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+    $('#redirectButton').click(function(){
+        window.location.href = 'login.html';
+    });
+});
+
+    </script>
+
+</body>
+</html>
