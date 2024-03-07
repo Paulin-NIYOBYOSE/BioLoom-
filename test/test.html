@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug records</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="mainDiv">
+        <h2>Drug records </h2>
+
+        <!-- Search input field -->
+        <input type="text" id="searchInput" placeholder="Search in your records">
+        <form id="deleteForm">
+            <table id="drugsTable">
+                <!-- Table header -->
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                        <th>Select to delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table rows will be dynamically populated -->
+                </tbody>
+            </table>
+            <input type="button" id="deleteBtn" value="Delete" style="margin-left: 350px;">
+        </form>
+        <div id="pagination"></div>
+        <h2>Add Drug</h2>
+        <form id="addForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="description">Description:</label><br>
+            <textarea id="description" name="description"></textarea><br>
+            <label for="price">Price:</label><br>
+            <input type="number" id="price" name="price" step="0.01" min="0" required><br>
+            <label for="stock">Stock:</label><br>
+            <input type="number" id="stock" name="stock" min="0" required><br><br>
+            <input type="submit" value="Add Drug">
+        </form>
+    </div>
+
+    <script src="../jquery.js"></script>
+    <script src="test.js"></script>
+</body>
+
+</html>

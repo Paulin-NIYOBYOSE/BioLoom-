@@ -21,7 +21,4 @@ $connn = new mysqli("localhost","root", "","user_log_in_db");
     
     echo json_encode(array("success" => true));
  }
-
-
-
  ?>

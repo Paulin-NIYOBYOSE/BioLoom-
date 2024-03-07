@@ -1,6 +1,5 @@
 body {
   background-color: #fef7ff;
-  overflow: hidden;
 }
 .sidediv {
   position: fixed;
@@ -198,7 +197,5 @@ img {
   border-color: #6B46C1;
 }
 
-/* Hide scrollbar */
-.divform {
-  overflow: hidden;
+#myTable{
 }
